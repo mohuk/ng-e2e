@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": false,
+    "noImplicitAny": false,
+    "outDir": "tmp",
+    "lib": [
+      "es2015"
+    ]
+  },
+	"include": [
+		"tests/**/*.ts",
+		"conf.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

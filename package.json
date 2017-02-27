@@ -1,0 +1,28 @@
+{
+  "name": "ng-e2e",
+  "version": "2.0.0",
+  "description": "Starter project for e2e testing with Protractor and Typescript",
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc",
+    "pretest": "./node_modules/.bin/rimraf tmp && npm run tsc",
+    "test": "./node_modules/.bin/protractor tmp/conf.js",
+    "selenium": "./node_modules/.bin/webdriver-manager start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohuk/ng-e2e"
+  },
+  "author": "Mohammad Umair Khan <mohammad.umair.k@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.41",
+    "@types/jasminewd2": "^2.0.0",
+    "protractor": "^5.1.1",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^7.0.5",
+    "jasmine-spec-reporter": "^3.2.0"
+  }
+}
